@@ -6,7 +6,7 @@ import readline
 def main():
     while True:
         try:
-            text = raw_input('brainfuck> ')
+            text = raw_input('bf> ')
         except EOFError:
             break
         if not text:
