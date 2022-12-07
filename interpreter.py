@@ -43,7 +43,7 @@ class Interpreter(object):
         raise Exception('Error parsing input')
 
     def clean_code(self, code):
-        return filter(lambda x: x in ['+', '-', '>', '<', '.', ',', '[', ']'], code)
+        return list(filter(lambda x: x in ['+', '-', '>', '<', '.', ',', '[', ']'], code))
 
     def bracemap(self, code):
         tempstack, result = [], {}

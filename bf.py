@@ -6,7 +6,7 @@ import readline
 def main():
     while True:
         try:
-            text = raw_input('bf> ')
+            text = input('bf> ')
         except EOFError:
             break
         if not text:
